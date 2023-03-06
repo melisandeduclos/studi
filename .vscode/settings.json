@@ -1,0 +1,50 @@
+{
+   "workbench.colorTheme": "Default High Contrast",
+   "json.schemas": [
+     
+
+
+
+   ],
+
+   // detection automatique du langage du fichier
+   "files.autoGuessEncoding": true,
+
+   "editor.tabSize": 3,
+   "editor.detectIndentation": false,
+   "editor.rulers": [
+       {
+           "column": 100,
+           "color": "#0984e3"
+       }
+   ],
+
+   "editor.accessibilitySupport": "off",
+   "editor.fontFamily": "Fira Code Light",
+   "editor.fontLigatures": true,
+   // "editor.fontWeight": "300", // Light
+    "editor.fontWeight": "400", // Regular
+   // "editor.fontWeight": "450", // Retina !! Only works with FiraCode-VF.ttf installed, see below when using separated font files (the normal case).
+   // "editor.fontWeight": "500", // Medium
+   //"editor.fontWeight": "600", //Bold
+
+//**************************INDENT RAINBOW***************************************//
+     // Defining custom colors instead of default "Rainbow" for dark backgrounds.
+   "indentRainbow.colors": [
+     "rgba(255,255,64,0.30)", 
+     "rgba(127,255,127,0.30)", 
+     "rgba(255,127,255,0.30)", 
+     "rgba(79,236,236,0.30)" ],
+   
+   "indentRainbow.colorOnWhiteSpaceOnly": false,
+
+   
+   "liveServer.settings.donotVerifyTags": true,
+   "files.autoSave": "afterDelay",
+  "[python]": {
+     "editor.formatOnType": true
+   },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "git.autofetch": true,
+
+}
