@@ -21,26 +21,39 @@
 </head>
 <body>
    <header>
-      <nav class="navbar navbar-dark bg-nav navbar-expand-xl fixed-top">
-      <!-- navbar-expand-xl : partie responsive du menu xl : 1170 -->
-         <a href="index.html" class="navbar-brand">
-            <img class="navbar-img" src="images/logo.png" alt="Logo du site atoutanim !">
-         </a>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+         <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+               <img src="images/logo.png" alt="Logo du site atoutanim !">
+            </a>
 
-         <button
-         type="button"
-         class="navbar-toggler"
-         data-bs-toggle="collapse"
-         data-bs-target="#navbarNavDropdown"
-         aria-controls="navbarNavDropdown"
-         aria-expanded="false"
-         aria-label="Toggle navigation">
-         <i class="bi bi-list"></i>
-         </button>
-
-         <div class="collapse navbar-collapse navbar-flex" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="bi bi-list"></i>
+            </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item dropdown">
+                  <a
+                  class="nav-link dropdown-toggle active"
+                     href="#"
+                     id="navbarDropdownNosactivites"
+                     role="button"
+                     data-bs-toggle="dropdown"
+                     aria-expanded="false">
+                     Nos activités
+                  </a>
+                  <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownNosactivites">
+                     <li><a class="dropdown-item" href="#">Jeux Picards</a></li>
+                     <li><a class="dropdown-item" href="#">Jeux d'orientation - rallyes</a></li>
+                     <li><a class="dropdown-item" href="#">Les phoques et la baie de Somme</a></li>
+                     <li><a class="dropdown-item" href="#">Marche nordique</a></li>
+                     <li><a class="dropdown-item" href="#">Meubles en carton</a></li>
+                     <li><a class="dropdown-item" href="#">Vélo</a></li>
+                     <!-- <li><hr class="dropdown-divider"></li> -->
+                     <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                  </ul>
+               </li>
+               
                <li class="nav-item dropdown">
                   <a
                      class="nav-link dropdown-toggle"
@@ -63,31 +76,8 @@
                      <li><a class="dropdown-item" href="#">Les scolaires et centres de loisirs</a></li>
                   </ul>
                </li>
-
-               <li class="nav-item dropdown">
-                  <a
-                     class="nav-link dropdown-toggle"
-                     href="#"
-                     id="navbarDropdownNosactivites"
-                     role="button"
-                     data-bs-toggle="dropdown"
-                     aria-expanded="false">
-                     Nos activités
-                  </a>
-                  <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownNosactivites">
-                     <li><a class="dropdown-item" href="#">Jeux Picards</a></li>
-                     <li><a class="dropdown-item" href="#">Jeux d'orientation - rallyes</a></li>
-                     <li><a class="dropdown-item" href="#">Les phoques et la baie de Somme</a></li>
-                     <li><a class="dropdown-item" href="#">Marche nordique</a></li>
-                     <li><a class="dropdown-item" href="#">Meubles en carton</a></li>
-                     <li><a class="dropdown-item" href="#">Vélo</a></li>
-                     <!-- <li><hr class="dropdown-divider"></li> -->
-                     <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                  </ul>
-               </li>
-
                <li class="nav-item">
-                  <a href="#" class="nav-link active">Nous</a>
+                  <a href="#" class="nav-link">Nous</a>
                </li>
                <li class="nav-item">
                   <a href="#" class="nav-link">Les sorties</a>
@@ -108,32 +98,51 @@
                   <a href="#" class="nav-link">Nos partenaires</a>
                </li>
             </ul>
+
+           </div>
          </div>
-      </nav>
+       </nav>
    </header>
 
-   <main class="flux">
-      <p>
+   <main class="flux container activites">
+      <h1 class="activites__title">Loisirs nature Abbeville - Baie de Somme - Forêt de Crécy </h1>
+      <div class="row">
+         <aside class="col-3 activites__menu">
+            <p>
+               MENU
+            </p>
+         </aside>
+         <section class="col-9 activites__description">
+            <div class="clearfix">
+               <img src="/images/nosactivites-01.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="Pêle-Mèle de nos activités">
+             
+               <h2 class="activites__title">Nos Activités</h2>
+               <p>Plaisirs ensemble et plaisirs au grand air ! Pour se divertir, un large choix d'animations et loisirs nature. 
+                  Pour tous : individuels, familles, groupes, scolaires, centres de loisirs, séminaires.  
+                  Simplicité - Convivialité : les maîtres mots de toutes nos activités ! 
+                  
+               </p>
+               <div class="description__contact">
+                  <a href="mailto:atoutanim@gmail.com">atoutanim@gmail.com</a><br>
+                  <a href="tel:+33681151593">06.81.15.15.93</a>
+               </div>
+               <p>
+                 As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+               </p>
+             
+               <p>
+                 And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+               </p>
+             </div>
+             <p> Aenean quis leo sit amet ex vehicula fringilla. Vivamus odio mi, molestie ac arcu eu, fermentum volutpat dolor. Sed nec dolor ut orci consectetur interdum sit amet vitae leo. Nam mollis purus ac nisi consequat, vitae luctus arcu imperdiet. Suspendisse ac congue enim, vitae blandit metus. Cras nec quam suscipit, rutrum turpis at, hendrerit felis. Sed volutpat, est sit amet imperdiet ultrices, nisl orci suscipit est, aliquet pellentesque risus velit sit amet magna. Integer velit justo, hendrerit nec aliquam in, venenatis in libero. Etiam vestibulum enim turpis, nec condimentum elit sodales nec. Donec mattis gravida ex vitae pretium. Curabitur maximus erat sed odio malesuada, in cursus nisi blandit. Ut in feugiat nulla, quis viverra elit. Cras eleifend dui dignissim turpis dignissim luctus. Aenean aliquet id magna ut volutpat. Quisque euismod, dolor vel venenatis tristique, eros sem egestas nunc, ac luctus odio enim in dui. Pellentesque pellentesque ut nibh quis ornare.
+      
+               Aenean quis leo sit amet ex vehicula fringilla. Vivamus odio mi, molestie ac arcu eu, fermentum volutpat dolor. Sed nec dolor ut orci consectetur interdum sit amet vitae leo. Nam mollis purus ac nisi consequat, vitae luctus arcu imperdiet. Suspendisse ac congue enim, vitae blandit metus. Cras nec quam suscipit, rutrum turpis at, hendrerit felis. Sed volutpat, est sit amet imperdiet ultrices, nisl orci suscipit est, aliquet pellentesque risus velit sit amet magna. Integer velit justo, hendrerit nec aliquam in, venenatis in libero. Etiam vestibulum enim turpis, nec condimentum elit sodales nec. Donec mattis gravida ex vitae pretium. Curabitur maximus erat sed odio malesuada, in cursus nisi blandit. Ut in feugiat nulla, quis viverra elit. Cras eleifend dui dignissim turpis dignissim luctus. Aenean aliquet id magna ut volutpat. Quisque euismod, dolor vel venenatis tristique, eros sem egestas nunc, ac luctus odio enim in dui. Pellentesque pellentesque ut nibh quis ornare.
+         
+               Aenean quis leo sit amet ex vehicula fringilla. Vivamus odio mi, molestie ac arcu eu, fermentum volutpat dolor. Sed nec dolor ut orci consectetur interdum sit amet vitae leo. Nam mollis purus ac nisi consequat, vitae luctus arcu imperdiet. Suspendisse ac congue enim, vitae blandit metus. Cras nec quam suscipit, rutrum turpis at, hendrerit felis. Sed volutpat, est sit amet imperdiet ultrices, nisl orci suscipit est, aliquet pellentesque risus velit sit amet magna. Integer velit justo, hendrerit nec aliquam in, venenatis in libero. Etiam vestibulum enim turpis, nec condimentum elit sodales nec. Donec mattis gravida ex vitae pretium. Curabitur maximus erat sed odio malesuada, in cursus nisi blandit. Ut in feugiat nulla, quis viverra elit. Cras eleifend dui dignissim turpis dignissim luctus. Aenean aliquet id magna ut volutpat. Quisque euismod, dolor vel venenatis tristique, eros sem egestas nunc, ac luctus odio enim in dui. Pellentesque pellentesque ut nibh quis ornare.</p>
+         </section>
+      </div>
+      
 
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id luctus felis. Phasellus vestibulum sapien eu eleifend accumsan. Nullam facilisis sem tortor, id vulputate erat sodales quis. Vestibulum a porttitor quam, at dignissim ligula. Nulla et sagittis augue, quis pellentesque mi. Morbi ultrices iaculis fringilla. Pellentesque posuere purus massa, a volutpat dui interdum vitae.
-         
-         In pharetra ipsum a vehicula interdum. Donec mattis velit id erat iaculis congue. Duis ut urna ut libero vehicula mollis non et justo. Integer a pulvinar eros. Etiam tempus metus id mi sagittis faucibus. Etiam finibus ipsum ac turpis feugiat, ac aliquam turpis auctor. Nullam fermentum id dolor eu rutrum. Morbi vehicula tincidunt vehicula. Vivamus sagittis consectetur magna, quis sagittis eros volutpat eget. Vivamus ultricies, nulla id lobortis elementum, leo diam egestas orci, id hendrerit arcu est vel elit. Cras vitae quam dolor. Fusce dapibus urna ut turpis pulvinar, eget vestibulum mauris facilisis. Maecenas faucibus odio non sodales bibendum.
-         
-         Integer sit amet magna ac magna mollis porta. Fusce vel mauris ut ipsum feugiat ornare. Nam feugiat aliquam velit, quis facilisis ligula sodales sit amet. Donec accumsan odio vel massa ultricies, quis varius dolor porta. Cras sed condimentum enim. Duis ligula orci, aliquam nec fermentum at, ullamcorper ut augue. Vestibulum cursus eu augue vitae mollis. Donec pharetra varius lectus quis suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-         
-         Quisque dolor sem, porttitor id facilisis ut, tempor eget magna. Suspendisse in tortor mi. Aliquam commodo auctor tellus imperdiet scelerisque. Morbi venenatis fringilla libero nec scelerisque. Donec est tortor, mattis eget quam vel, porta semper quam. Morbi fringilla in purus aliquam vulputate. Phasellus efficitur sapien eget nunc semper, in lacinia nibh tincidunt. Praesent ultricies orci in est sagittis, nec volutpat magna finibus. Nam id metus sit amet eros scelerisque posuere. Suspendisse potenti. Fusce diam sem, blandit id vehicula et, dictum ac orci.
-         
-         In eu sem tellus. Cras et orci elementum, aliquet justo a, vestibulum augue. Sed ultricies non sem et lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi quis massa hendrerit est tempor venenatis nec at nulla. Duis mi ligula, commodo at volutpat euismod, vestibulum quis neque. Etiam maximus viverra risus in volutpat.
-         
-         Vivamus ut mauris non sapien vehicula sollicitudin. Morbi vitae suscipit nibh, at consectetur diam. Duis auctor mi et pharetra pulvinar. Proin commodo est ipsum, varius blandit nunc facilisis quis. Vivamus luctus eros ac arcu tempor, rhoncus tincidunt urna vulputate. Aliquam et tempus lacus. Etiam iaculis faucibus enim non condimentum. In hac habitasse platea dictumst. Suspendisse potenti. Vivamus id nisi orci. Sed eu aliquet felis. Nulla placerat sapien eros, eget scelerisque ante ultrices sed.
-         
-         Maecenas condimentum condimentum bibendum. Duis molestie risus in tellus malesuada viverra. Praesent tempus in metus sed euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin maximus dolor sed nibh bibendum, et hendrerit eros posuere. Maecenas tincidunt libero et eleifend sodales. Phasellus fermentum urna metus, quis porta metus finibus finibus. Nulla vitae accumsan augue. Fusce sed ante nec ipsum blandit finibus. Praesent tincidunt cursus turpis, eu pellentesque lacus ultricies vitae. Nam pulvinar elementum orci, ac cursus nunc vestibulum a. Aliquam et est enim. Phasellus justo dui, posuere at efficitur ut, convallis sodales metus. Fusce imperdiet quis felis a lacinia. Nullam mauris ligula, condimentum non dapibus id, interdum id augue. Pellentesque id eleifend ex.
-         
-         Sed ut ipsum at tortor lobortis egestas eget a sapien. Nunc quis elementum justo, id pretium tortor. Sed nec enim neque. In aliquam quis tortor vel facilisis. In hac habitasse platea dictumst. Maecenas eros est, ornare finibus ultricies nec, congue sit amet enim. Ut dignissim nec purus at porta. Nunc sodales tortor mattis rutrum iaculis. Phasellus vitae felis dictum, finibus eros a, bibendum dui.
-         
-         Cras sed nunc non est posuere feugiat consectetur quis erat. Suspendisse efficitur tellus a felis vulputate ullamcorper. Etiam varius nunc est, ut pharetra nunc sollicitudin in. Aenean sed pellentesque leo. Vivamus nec ultrices ante. Fusce nec eros nisi. Vestibulum convallis, nulla eget interdum semper, leo mauris finibus dolor, at accumsan purus dolor eget tellus. Proin luctus convallis libero sit amet semper. Vivamus molestie lacus et ligula mollis, vel pulvinar lorem condimentum. Proin fermentum ligula odio, eget iaculis purus rhoncus vel. In suscipit lorem ut elit pharetra blandit. Nullam consectetur condimentum posuere. Aliquam dictum sollicitudin ligula a mollis. Etiam imperdiet suscipit turpis ac molestie. Nunc vitae enim enim.
-         
-         Aenean quis leo sit amet ex vehicula fringilla. Vivamus odio mi, molestie ac arcu eu, fermentum volutpat dolor. Sed nec dolor ut orci consectetur interdum sit amet vitae leo. Nam mollis purus ac nisi consequat, vitae luctus arcu imperdiet. Suspendisse ac congue enim, vitae blandit metus. Cras nec quam suscipit, rutrum turpis at, hendrerit felis. Sed volutpat, est sit amet imperdiet ultrices, nisl orci suscipit est, aliquet pellentesque risus velit sit amet magna. Integer velit justo, hendrerit nec aliquam in, venenatis in libero. Etiam vestibulum enim turpis, nec condimentum elit sodales nec. Donec mattis gravida ex vitae pretium. Curabitur maximus erat sed odio malesuada, in cursus nisi blandit. Ut in feugiat nulla, quis viverra elit. Cras eleifend dui dignissim turpis dignissim luctus. Aenean aliquet id magna ut volutpat. Quisque euismod, dolor vel venenatis tristique, eros sem egestas nunc, ac luctus odio enim in dui. Pellentesque pellentesque ut nibh quis ornare.</p>
    </main>
    <!-- LINK TO SCRIPT BOOTSTRAP -->
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

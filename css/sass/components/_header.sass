@@ -1,31 +1,23 @@
-
 .navbar
-   padding-left: $pd-std
-   padding-right: $pd-std
-   max-height: $navbar-height
-   display: flex
-   justify-content: space-evenly
-
-.bg-nav
    background-color: $base-color
 
-.navbar-flex
-   max-width: 600px
 
 .navbar-nav
    display: flex
-   justify-items: space-evenly
    flex-wrap: wrap
 
+.navbar-brand
+   img
+      width: 300px
 
-@media screen and (max-width: map-get($grid-bpoints, "xl"))
-   .navbar-img
-      max-width: $navbar-img-xl
-      max-height: $navbar-img-xl
+@media screen and (max-width: map-get($grid-bpoints, "lg"))
+      .navbar-nav
+         display: flex
+         flex-direction: row
+      .nav-item
+         margin-right: auto
+      img
+         max-width: 100%
+         height: auto
 
-
-@media screen and (max-width: map-get($grid-bpoints, "sm"))
-   .navbar-img
-      max-width: $navbar-img-sm
-      max-height: $navbar-img-sm
 
