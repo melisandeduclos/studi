@@ -1,32 +1,13 @@
-body
-   background-color: rgba($base-color, 0.20)
 
+body
+   background-color: $color-light
 
 p
-   color: darken($base-color,5)
-
-.flux
-   width: 100%
-   max-width: 1200px
-   margin-left: auto
-   margin-right: auto
-   margin-top: $navbar-height
+   color: $color-dark
 
 h1
-   margin-bottom: $mg-std
+   margin: map-get($list-spacing, "std")
 
-.activites__title
-   color: $base-color
-   text-align: center
-   font-family: $ff-std
-   padding-bottom: $pd-std
+.bg-std
+   background-color: $base-color
 
-@media screen and (max-width: map-get($grid-bpoints, "lg"))
-   .flux
-      max-width: map-get($grid-bpoints, "md")
-      margin-left: $mg-std
-      margin-right: $mg-std
-
-@media screen and (max-width: map-get($grid-bpoints, "sm"))
-   .flux
-      max-width: map-get($grid-bpoints, "sm")
