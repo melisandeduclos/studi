@@ -1,0 +1,13 @@
+@each $nuance, $color-name in $list-color
+   .hr-solid-#{$nuance}
+      border-top: solid 2px $color-name
+
+   .button-#{$nuance}
+      background-color: $color-name
+      @if $nuance == light
+         color: $color-dark
+      @else
+         color: $color-light
+      border-radius: map-get($list-spacing, "lg")
+      padding: map-get($list-spacing, "lg")
+
