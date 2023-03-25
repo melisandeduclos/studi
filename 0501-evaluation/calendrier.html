@@ -34,8 +34,8 @@
                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item dropdown">
                      <a
-                     class="nav-link dropdown-toggle active"
-                        href="#"
+                     class="nav-link dropdown-toggle"
+                        href="index.html"
                         id="navbarDropdownNosactivites"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -51,7 +51,6 @@
                         <li><a class="dropdown-item" href="#">Marche nordique</a></li>
                         <li><a class="dropdown-item" href="#">Meubles en carton</a></li>
                         <li><a class="dropdown-item" href="#">Vélo</a></li>
-                        <!-- <li><hr class="dropdown-divider"></li> -->
                         <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                      </ul>
                   </li>
@@ -80,13 +79,13 @@
                   </li>
 
                   <li class="nav-item">
-                     <a href="#" class="nav-link">Nous</a>
+                     <a href="index.html" class="nav-link">Nous</a>
                   </li>
                   <li class="nav-item">
                      <a href="#" class="nav-link">Les sorties</a>
                   </li>
                   <li class="nav-item">
-                     <a href="calendrier.html" class="nav-link">Calendrier</a>
+                     <a href="#" class="nav-link active">Calendrier</a>
                   </li>
                   <li class="nav-item">
                      <a href="#" class="nav-link">Se retrouver</a>
@@ -107,7 +106,6 @@
    </header>
 
    <main class="flux activites">
-      <h1 class="activites__title">Loisirs nature Abbeville - Baie de Somme - Forêt de Crécy </h1>
       <div class="row">
          <aside class="col-xl-3 col-sm-auto activites__menu h-100">
                <a class="card__link" href="#">
@@ -152,13 +150,73 @@
          </aside>
          <section class="col-xl-8 col-lg-6 col-sm-10">
             <div class="activites__main">
-               <img src="images/nosactivites-01.png" class="activites__img" alt="Pêle-Mèle de nos activités">
+               <img src="images/calendrier-header.jpeg" class="activites__img" alt="Carte de la Baie de Somme">
                
-               <h2 class="activites__title">Nos Activités</h2>
-               <p class="activites__description">Plaisirs ensemble et plaisirs au grand air !</p>
-               <p class="activites__description">Pour se divertir, un large choix d'animations et loisirs nature.</p> 
-               <p class="activites__description">Pour tous : individuels, familles, groupes, scolaires, centres de loisirs, séminaires.</p>
-               <p class="activites__description">Simplicité - Convivialité : les maîtres mots de toutes nos activités ! </p>
+               <h2 class="activites__title">Calendrier</h2>
+               <table class="activites__table">
+                  <!-- https://www.w3schools.com/Css/css_table.asp -->
+                  <thead>
+                      <tr>
+                          <th>Date</th>
+                          <th>Horaire</th>
+                          <th>Activités</th>
+                          <th>Lieu</th>
+                      </tr>
+                  </thead>
+
+                  <tbody>
+                  <tr>
+                      <td>12/11</td>
+                      <td>10h30</td>
+                      <td>Les phoques et la baie de Somme</td>
+                      <td>Le Hourdel</td>
+                  </tr>
+                  <tr>
+                      <td>09/11</td>
+                      <td>10h30</td>
+                      <td>Les phoques et la baie de Somme</td>
+                      <td>Le Hourdel</td>
+                  </tr>
+                  <tr>
+                      <td>05/11</td>
+                      <td>10h30</td>
+                      <td>Les phoques et la baie de Somme</td>
+                      <td>Le Hourdel</td>
+                  </tr>
+                  <tr>
+                      <td>04/11</td>
+                      <td>10h30</td>
+                      <td>Les phoques et la baie de Somme</td>
+                      <td>Le Hourdel</td>
+                  </tr>
+                  <tr>
+                      <td>04/11</td>
+                      <td>10h30</td>
+                      <td>Les phoques et la baie de Somme</td>
+                      <td>Le Hourdel</td>
+                  </tr>
+                  <tr>
+                      <td>03/11</td>
+                      <td>10h30</td>
+                      <td>Les phoques et la baie de Somme</td>
+                      <td>Le Hourdel</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="2">05/07</td>
+                      <td>Découvertes des phoques</td>
+                      <td>Le Hourdel</td>
+                  </tr>
+                  <!-- <tr>
+                      <td rowspan="2">Brest</td>
+                      <td>Julie</td>
+                      <td><a href="mailto:julie@mail.fr">julie@mail.fr</a></td>
+                  </tr> -->
+                  <!-- <tr>
+                      <td>Karine</td>
+                      <td><a href="mailto:karine@mail.fr">karine@mail.fr</a></td>
+                  </tr> -->
+                  </tbody>
+                </table>
             </div>
             <div class="activites__contact">
                <a href="mailto:atoutanim@gmail.com">atoutanim@gmail.com</a><br>
@@ -172,7 +230,7 @@
       <div class="flux">
          <ul class="footer__menu">
             <li>
-               <a href="#" class="footer-menu__link">Nos activités</a>
+               <a href="index.html" class="footer-menu__link">Nos activités</a>
                <hr class="hr-solid-light"/>
             </li>
             <li>
@@ -188,7 +246,7 @@
                <hr class="hr-solid-light"/>
             </li>
             <li>
-               <a href="calendrier.html" class="footer-menu__link">Calendrier</a>
+               <a href="#" class="footer-menu__link">Calendrier</a>
                <hr class="hr-solid-light"/>
             </li>
             <li>

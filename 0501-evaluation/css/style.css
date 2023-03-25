@@ -191,6 +191,17 @@ h1 {
   font-size: 1.2rem;
 }
 
+.activites__img {
+  max-width: 762px;
+  max-height: 148px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.activites__table {
+  width: 100%;
+}
+
 footer {
   min-height: 120px;
   padding-bottom: 40px;
