@@ -29,3 +29,23 @@
 
 .activites__table
    width: 100%
+   color: $color-base
+   table-layout: auto
+   & th
+      background-color: $color-dark
+      color: $color-light
+   & th, td
+      padding: map-get($list-spacing,"lg")
+   & td:first-child
+      width: 175px
+      padding-right: map-get($list-spacing,"lg")*2
+   & tr
+      +transition(0.3s)
+   & tr:hover, .fc-dark:hover
+      background-color: $color-dark
+      color: $color-light
+
+
+      
+      
+

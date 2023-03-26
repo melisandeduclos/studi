@@ -11,3 +11,8 @@
       border-radius: map-get($list-spacing, "lg")
       padding: map-get($list-spacing, "lg")
 
+   .fc-#{$nuance}
+      color: $color-name
+
+@mixin transition($duration)
+    transition: all $duration cubic-bezier(.24,.87,.56,.44)
